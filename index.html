@@ -6,25 +6,25 @@
     <title>Pure HTML page</title>
     <meta charset='utf-8' >
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <meta name="description" content="PAge in pure HTML" />
+    <meta name="description" content="Page in pure HTML" />
 
     <!-- reset the css: https://github.com/uyouthe/pwacss -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/uyouthe/pwacss/pwacss.min.css">
     
     <!-- PWA for Apple: https://pwagym.com/ -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="What's the Weather here?">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- attempt of manifest -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="application-name" content="What's the Weather here?">
     <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png">
     <meta name="theme-color" content="#676060">
 
     <!-- splash screen for IOS devices: https://appsco.pe/developer/splash-screens -->
@@ -38,6 +38,12 @@
     <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+    <style>
+      body {
+        width: 100%;
+      }
+    </style>
 
     <script>
       function addUnderline(text) {
@@ -62,7 +68,7 @@
     <!-- Navbar -->
     <table id="Navbar" width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="#0000">
       <td>
-        <table id="NavbarContent" width="60%" border="0" align="center" cellpadding="1" cellspacing="1">
+        <table id="NavbarContent" width="60%" border="0" align="center" cellpadding="3" cellspacing="1">
           <td width="96">
             <font face="Verdana, Geneva, sans-serif" color="white"><h3 onmouseover="addUnderline(this)" onmouseout="removeUnderline(this)">Home</h3></font>
           </td>
@@ -108,9 +114,9 @@
     <table width="100%" height="150" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
       <tr>
         <td align="center">
-          <table width="600"  border="0" cellspacing="1" cellpadding="1">
+          <table style="max-width : 600px" border="0" cellspacing="1" cellpadding="1" width="100%">
             <tr>
-              <img src="./bgimage.jpg" alt="image" width="600" min>
+              <img src="./assets/bgimage.jpg" alt="image" style="max-width : 600px" width="100%">
             </tr>
           </table>
         </td>
@@ -121,7 +127,7 @@
     <table width="100%" height="82" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
       <tr>
         <td height="72" align="center" valign="top">
-          <table width="730"  border="0" cellspacing="1" cellpadding="1">
+          <table width="100%" style="max-width : 730"  border="0" cellspacing="1" cellpadding="1">
             <tr>
               <td width="726" align="center">
                 <font face="Verdana, Geneva, sans-serif" color="black" size="6">
@@ -174,7 +180,7 @@
     <table width="100%" height="236" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
       <tr>
         <td height="72" align="center" valign="top">
-          <table width="900"  border="1" bordercolor="#CCCCCC" cellspacing="0" cellpadding="8">
+          <table width="90%"  border="1" bordercolor="#CCCCCC" cellspacing="0" cellpadding="8">
             <tr>
               <td width="286" align="center">
                 <font face="Verdana, Geneva, sans-serif" color="black" size="3">
@@ -246,8 +252,8 @@
     </table>
 
   <script>
-      document.getElementById("NavbarContent").style.minWidth = "500px";
-      document.getElementById("BannerContent").style.minWidth = "500px";
+      // document.getElementById("NavbarContent").style.minWidth = "500px";
+      // document.getElementById("BannerContent").style.minWidth = "500px";
       document.getElementById("BannerContent").style.maxWidth = "700px";
       var h3s = document.getElementsByTagName('h3');
       for (var i = 0; i < h3s.length; i++) {
