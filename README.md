@@ -8,4 +8,4 @@ When I started working on the special profile repo option that GitHub added, I t
 As many might know, GitHub does not allow CSS in the Markdown files, and because the README is a _README.md_ the only way to style it is with old school html styling. <br />
 So, I took the day to review what I have learned, and learn what I did not know, and came up with this *"Pure HTML Page"*.
 
-<a href="http://pure-html-page.surge.sh/" target="_blank" title="Enjoy!" alt="link">Link to page :)</a>
+<a href="http://pure-html-page.surge.sh/" title="Enjoy!" alt="link">Link to page :)</a>
