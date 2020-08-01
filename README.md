@@ -7,7 +7,7 @@ building a page in pure HTML
 <p align="center">
 When I started working on the special profile <sup>repo</sup> option that GitHub added, I tried styling it. <br />
 </p>
->  this is cool
+>  `this is cool`
 <p align="right">
 As many might know, GitHub does not allow CSS in the <sub>Markdown</sub> files, and because the README is a <em>README.md</em> the only way to style it is with old school html styling. <br />
 </p>
