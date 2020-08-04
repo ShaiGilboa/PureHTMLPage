@@ -15,12 +15,12 @@ As many might know, GitHub does not allow CSS in the <sub>Markdown</sub> files, 
 So, I took the day to review what I have learned, and learn what I did not know, and came up with this <strong>"Pure HTML Page"</strong>.
 </p>
 
-<table width="60%">
+<!-- <table width="60%">
   <tr>
     <td>
     </td>
     <td>
     </td>
   </tr>
-</table >
-<a href="http://pure-html-page.surge.sh/" title="Enjoy!" alt="link">Link to page :)</a>
+</table > -->
+<a href="http://pure-html-page.surge.sh/" title="Enjoy!" alt="link" align="center">Link to page :)</a>
