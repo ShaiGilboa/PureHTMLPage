@@ -23,4 +23,4 @@ So, I took the day to review what I have learned, and learn what I did not know,
     </td>
   </tr>
 </table > -->
-<a href="http://pure-html-page.surge.sh/" title="Enjoy!" alt="link" align="center">Link to page :)</a>
+<p align="center"><a href="http://pure-html-page.surge.sh/" title="Enjoy!" alt="link" >Link to page :)</a></p>
